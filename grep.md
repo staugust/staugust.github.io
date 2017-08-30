@@ -7,3 +7,5 @@ or
 2. Use flag "--" to stop switch parsing
 Code:
 ls | grep -- -a
+
+![face](http://ovh5ya2dv.bkt.clouddn.com/face.jpg "yoyo")
