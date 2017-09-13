@@ -1,5 +1,5 @@
 Input/Output Redirection in the Shell
-'''
+```
 这篇文章主要介绍了shell 1>&2 2>&1 &>filename重定向的含义和区别,需要的朋友可以参考下
 当初在shell中, 看到">&1"和">&2"始终不明白什么意思.经过在网上的搜索得以解惑.其实这是两种输出.
 在 shell 程式中，最常使用的 FD (file descriptor) 大概有三个, 分别是:
@@ -66,4 +66,4 @@ $ ls: nodir: No such file or directory
 >&2 即 1>&2 也就是把结果输出到和标准错误一样；之前如果有定义标准错误重定向到某log文件，那么标准输出也重定向到这个log文件
 如：ls 2>a1 >&2 （等同 ls >a1 2>&1）
 把标准输出和标准错误都重定向到a1，终端上看不到任何信息。
-'''
+
