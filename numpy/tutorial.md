@@ -7,3 +7,16 @@ For example, the coordinates of a point in 3D space [1, 2, 1] is an array of ran
 [[ 1., 0., 0.],
  [ 0., 1., 2.]]
 ```
+
+## Array Creation
+There are several ways to create arrays.
+
+``numpy.array`` creates array with python iterable object.
+```
+import numpy as np
+np.array( [ i for i in range(10)])  # Use python list
+np.array( (1,2,3))  # Use python tuple
+np.array( set([1,2,3])) # Use python set
+
+```
+
