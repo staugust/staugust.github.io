@@ -52,6 +52,12 @@ array([[5, 4],
                                 #   [ A[1,:] * B[:,0], A[1,:] * B[:,1] ]
 ```
 
+## Universal Functions
+NumPy provides familiar mathematical functions such as sin, cos, and exp. In NumPy, these are called “universal functions”(ufunc). Within NumPy, these functions operate elementwise on an array, producing an array as output.
+
+## Indexing, Slicing and Iterating
+``One-dimentional`` arrays can be indexed, sliced and iterated over, much like lists and other Python sequences.
+
 
 
 
