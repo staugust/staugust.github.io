@@ -20,8 +20,7 @@ np.array( set([1,2,3])) # Use python set
 np.array([(1.5,2,3), (4,5,6)]) # create two-dimensional array
 ```
 
-``numpy.zeros`` creates an array full of zeros.
-``numpy.empty`` creates an array whose initial content is random and depends on the state of the memory. By default, the dtype of the created array is `float64`.
+``numpy.zeros`` creates an array full of zeros, while ``numpy.ones`` creates an array full of ones. And ``numpy.empty`` creates an array whose initial content is random and depends on the state of the memory. By default, the dtype of the created array is `float64`.
 ```
 import numpy as np
 np.zeros( (3,4))  # create an array with shape (3,4)
