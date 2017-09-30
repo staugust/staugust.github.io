@@ -26,4 +26,48 @@ import numpy as np
 np.zeros( (3,4))  # create an array with shape (3,4)
 np.empty( (3,4))
 ```
+``numpy.arange(start, stop, step)`` will create sequences of numbers.
+``numpy.lnspace(start, stop, total_elements)`` will create  sequences of numbers too.
+```
+import numpy as np
+np.arange(10,30,5)  # array([10, 15, 20, 25])
+np.linspace(0,2,9)  # array([ 0.  , 0.25, 0.5, ... , 1.75, 2])
+```
+## Basic Operations
+Arithmetic operators on arrays apply elementwise. 
+```
+>>> A = np.array( [[1,1],
+...             [0,1]] )
+>>> B = np.array( [[2,0],
+...             [3,4]] )
+>>> A*B                         # elementwise product
+array([[2, 0],
+       [0, 4]])
+>>> A.dot(B)                    # matrix product
+array([[5, 4],
+       [3, 4]])
+>>> np.dot(A, B)                # another matrix product
+array([[5, 4],
+       [3, 4]])                 # [ [ A[0,:] * B[:,0], A[0,:] * B[:,1] ],
+                                #   [ A[1,:] * B[:,0], A[1,:] * B[:,1] ]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
