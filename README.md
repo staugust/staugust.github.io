@@ -4,6 +4,9 @@ Hello, world
 
 ## Index
 + [grep](http://augusto.cn/linux/grep.html)
++ [strace](./linux/strace.md)
+
++ [python globals](./python/globals.md)
 
 
 ## Welcome to GitHub Pages
