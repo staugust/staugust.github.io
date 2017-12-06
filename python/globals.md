@@ -2,17 +2,17 @@
 
 Suppose we have two python files, `first.py` and `second.py`.
 `first.py` likes below:
-`
+```
 def setGlobals(key, value):
   globals()[key] = value
  
 def printGlobals():
   for key,value in globals().copy().items():
     print('first  -->',key,value)
-`
+```
 
 And second.py is shown below:
-`
+```
 # import first
 from first import setGlobals, printGlobals
 
@@ -27,9 +27,9 @@ printGlobals()
 
 print("------"*5)
 pGlobals()
-`
+```
 The output is shown as below:
-``
+```
 first  --> __name__ first
 first  --> __doc__ None
 first  --> __package__
@@ -65,4 +65,4 @@ All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corpo
     second --> setGlobals <function setGlobals at 0x7f95cf2fb840>
     second --> printGlobals <function printGlobals at 0x7f95cf2fb8c8>
     second --> pGlobals <function pGlobals at 0x7f95cf3b7e18>
-``
+```
