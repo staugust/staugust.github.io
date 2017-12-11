@@ -10,7 +10,11 @@ After that, you can create logical volumes from the logical group with command `
 
 Use `mkfs.*` to format logical volumes. 
 
-Finally, use `mount` to mount new created logical volume to a directory. 
+Finally, use `mount` to mount new created logical volume to a directory, or modify /etc/fstab to auto mount when system started, add lines like:
+```
+/dev/{logical group name}/{logical volume name} {mount directory} {file system format like xfs, ext4 etc.} defaults 0 0
+```
+I would talk about fstab in another article. 
 
 Some commands may help to detect file system status:
 
@@ -29,5 +33,4 @@ du
 find
 
 ```
-
 
