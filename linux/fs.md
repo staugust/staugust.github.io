@@ -24,6 +24,10 @@ pvs
 pvscan
 mount
 
+df 
+du 
+find
+
 ```
 
 
