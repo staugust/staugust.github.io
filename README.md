@@ -4,6 +4,10 @@ Hello, this is `augusto.cn`.
 
 ## Index
 
+### Java
+
++ [maven provided with Intellij](./java/maven-dependency-scope.md)
+
 ### Linux related
 + [grep](http://augusto.cn/linux/grep.html)
 + [strace](./linux/strace.md)
