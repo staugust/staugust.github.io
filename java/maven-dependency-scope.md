@@ -13,3 +13,6 @@ Here's a trick to do such thing in Intellij:
 4. add `localJars` to modules' Dependencies, and set scope to `Runtime`. 
 
 Now, enjoy it. 
+
+# Reference 
+1. https://intellij-support.jetbrains.com/hc/en-us/community/posts/206154389-How-Is-The-Maven-Provided-Scope-Supposed-To-Work-When-Run-From-IDEA-
