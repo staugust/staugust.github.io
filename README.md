@@ -17,7 +17,7 @@ Hello, this is `augusto.cn`.
 
 ### Python related
 + [python globals](./python/globals.md)
-
++ [matplotlib axis](./numpy/matplotlib.md)
 
 ### Software engineering related
 
