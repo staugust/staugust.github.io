@@ -14,7 +14,6 @@ import jline._
 object TestConsole{
   def main(args: Array[String]): Unit = {
     val reader = new ConsoleReader()
-    jline.TerminalFactory.registerFlavor(TerminalFactory.Flavor.WINDOWS, classOf[UnsupportedTerminal])
     var line = ""
     while( (line = reader.readLine("-->")) != null){
       println(line)
