@@ -7,6 +7,7 @@ Hello, this is `augusto.cn`.
 ### Java
 
 + [maven provided with Intellij](./java/maven-dependency-scope.md)
++ [jline with Intellij](./java/jline.md)
 
 ### Linux related
 + [grep](http://augusto.cn/linux/grep.html)
