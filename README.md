@@ -6,22 +6,22 @@ Hello, this is `augusto.cn`.
 
 ### Java
 
-+ [maven provided with Intellij](./java/maven-dependency-scope.md)
-+ [jline with Intellij](./java/jline.md)
++ [maven provided with Intellij](./plang/java/maven-dependency-scope.md)
++ [jline with Intellij](./plang/java/jline.md)
 
 ### Linux related
-+ [grep](http://augusto.cn/linux/grep.html)
-+ [strace](./linux/strace.md)
-+ [Configure Network Interface](./linux/configNetwork.md)
-+ [file system](./linux/fs.md)
-+ [dnsmasq](./linux/dnsmasq.md)
++ [grep](./os/linux/grep.html)
++ [strace](./os/linux/strace.md)
++ [Configure Network Interface](./os/linux/configNetwork.md)
++ [file system](./os/linux/fs.md)
++ [dnsmasq](./os/linux/dnsmasq.md)
 
 ### Python related
-+ [python globals](./python/globals.md)
-+ [matplotlib axis](./numpy/matplotlib.md)
++ [python globals](./plang/python/globals.md)
++ [matplotlib axis](./plang/numpy/matplotlib.md)
 
 ### Software engineering related
 
-+ [semver](./se/semver.md)
++ [semver](./plang/semver.md)
 
 
