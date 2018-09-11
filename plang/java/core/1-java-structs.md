@@ -11,8 +11,13 @@ System.out.println("Hello world!"); // comment here
 ```
 2. use __/\*__ and __\*/__
 ```
-/**
- *
+/* comment here
+ */
+```
+3. use __/\*\*__ and __\*/__
+```
+/** comment
+ * comment 
  */
 ```
 # Data Types
