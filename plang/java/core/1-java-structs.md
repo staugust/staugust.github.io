@@ -9,9 +9,9 @@ Java has three ways of marking comments.
 ```
 System.out.println("Hello world!"); // comment here
 ```
-2. use **/\*** and **\*/**
+2. use __/*__ and __*/__
 ```
-/\*\*
+/**
  *
  */
 ```
