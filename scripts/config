@@ -1,0 +1,27 @@
+# An example for specifying different rsa keys for different host.
+# gitlab
+Host git.sky-data.cn 
+    HostName git.sky-data.cn
+    PreferredAuthentications publickey
+    User jinghua.yao
+    IdentityFile ~/.ssh/gitlab
+# github
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    #User git
+    User staugust
+    IdentityFile ~/.ssh/github
+
+# sky
+Host sky
+    HostName github.com
+    PreferredAuthentications publickey
+    User git
+    IdentityFile ~/.ssh/gitlab
+
+## using ssh to pull/push
+# git remote -vv
+# origin  git@sky:AugustoYao/test.git (fetch)
+# origin  git@sky:AugustoYao/test.git (push)
+
