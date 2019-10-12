@@ -45,3 +45,20 @@ web应用通常使用多线程来处理并发请求, 所以service方法可能�
 + `doOptions` 用于处理HTTP Options请求
 + `doTrace` 用于处理HTTP Trace请求. 
 
+### 其他方法
+doPut和doDelete方法允许Servlet开发人员支持使用这些功能的HTTP/1.1客户端. HttpServlet中的doHead方法是doGet方法的一种特殊形式, 它只返回doGet方法生成的头. doOptions方法响应servlet支持的HTTP方法. doTrace方法生成一个响应，其中包含TRACE请求中发送的所有标头实例.
+
+### 有条件的Get支持
+HttpServlet接口定义了getLastModified方法以支持条件GET操作. 条件GET操作仅在从指定时间开始修改资源时才请求发送资源. 在适当的情况下, 该方法的实现可以帮助有效利用网络资源.
+
+## Number of Instances
+Servlet要么通过注解的方式, 要么通过包含servlet的web application的配置文件来声明. Servlet declaration控制servlet container提供servlet实例的方式. 
+对于未托管在分布式环境中的servlet(缺省值), servlet容器每个servlet声明必须只使用一个实例. 但是, 对于实现`SingleThreadModel`接口的servlet, servlet容器可以实例化多个实例以处理繁重的请求加载并将请求序列化到特定实例.
+如果是分布式环境的话, 一个servlet container可能为每个JVM实例创建一个instance. 然而, 如果servlet实现了`SingleThreadModel`, 则servlet container可能会为每个JVM都创建多个实例instances. 
+### Note About The Single Thread Model
+
+
+## 
+
+
+

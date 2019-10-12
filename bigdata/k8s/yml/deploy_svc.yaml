@@ -1,0 +1,47 @@
+# This is a template for deploy a container and then expose port for debugging
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: debug-deployment
+  namespace: test
+  labels:
+    app: emdebug
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emdebug
+  template:
+    metadata:
+      labels:
+        app: emdebug
+    spec:
+      serviceAccountName: admin
+      nodeSelector:
+        node-role.kubernetes.io/master: ""
+      containers:
+      - name: main
+        image: centos:7
+        command:
+        - sh
+        args:
+        - -c
+        - "sleep 86400000"
+        ports:
+        - containerPort: 2345
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: emdebug-service
+  namespace: test
+spec:
+  type: NodePort
+  selector:
+    app: emdebug
+  ports:
+    - protocol: TCP
+      port: 2345
+      targetPort: 2345
+
